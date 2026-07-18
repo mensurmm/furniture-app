@@ -1,4 +1,4 @@
-Here's a clean, professional README ready to copy and paste:
+
 
 ---
 
