@@ -241,9 +241,8 @@ This project is proprietary software. All rights reserved.
 
 ## 👥 Team
 
-- **Project Lead:** [Your Name]
-- **Development:** [Your Team]
-- **Design:** [Design Team]
+- **Project Lead:** [Mensur Mohammed]
+
 
 ---
 
@@ -262,7 +261,7 @@ This project is proprietary software. All rights reserved.
 For any inquiries or support:
 
 - **Email:** [0mensur01@gmail.com]
-- **Website:** [www.bebafurniture.com](https://www.bebafurniture.com)
+- **Website:** [(https://furniture-app-beta-ten.vercel.app/en)]
 - **Location:** Arat Kilo, Addis Ababa, Ethiopia
 
 ---
