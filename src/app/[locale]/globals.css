@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  /* Crisp, museum-gallery white background */
+  --background: #ffffff;
+  /* Luxurious soft off-black - softer on the eyes than pure black */
+  --foreground: #121212;
+  
+  /* Shared systemic transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* Explicitly wire up our font families */
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  
+  /* Global Animation curve for premium interaction feel */
+  --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base resets & global enhancements */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    /* Sans-serif by default for clean layout data, with explicit Ethiopic support */
+    font-family: var(--font-sans), "Noto Sans Ethiopic", sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Make headings stand out as premium, literary editorial elements */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif), "Noto Sans Ethiopic", serif;
+    letter-spacing: -0.02em;
+  }
+
+  /* Custom selection tint matching warm wood/gold tones instead of generic browser blue */
+  ::selection {
+    background-color: rgba(217, 119, 6, 0.15); /* Soft Amber/Gold backdrop */
+    color: #b45309; /* Deep Amber text */
+  }
+}
